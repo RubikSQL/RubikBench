@@ -1,0 +1,2 @@
+Budget Completion Rate = Expense / Budget (for each expense or revenue report item)
+Notice that the budget is only a yearly constant, so the expense or revenue should be ytd.

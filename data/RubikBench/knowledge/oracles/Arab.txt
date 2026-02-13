@@ -1,0 +1,6 @@
+Arab countries are nations where Arabic is the official or primary language, and they are members of the Arab League.
+Among the 22 countries in the database with APEX sales offices, 3 are Arab countries:
+- Egypt (sales_region_name_en = 'Africa')
+- Saudi Arabia (sales_region_name_en = 'Middle East')
+- United Arab Emirates (sales_region_name_en = 'Middle East')
+Note: Egypt is in the Africa sales region, while Saudi Arabia and UAE are in the Middle East sales region.

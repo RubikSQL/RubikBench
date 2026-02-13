@@ -1,0 +1,44 @@
+tags:
+    # Difficulty tags
+    - level-simple          # Usually <= 3 filter conditions, no complex CTE or complex JOIN, typically single-hop, factual or very short queries without reasoning, simple developer or user-prefrence queries
+    - level-moderate        # Most queries that are not simple are moderate, can have multiple filter conditions, may involve some reasoning or 2-hop, can include aggregations, trivial comparisons or formulas
+    - level-challenging     # Complex formulas or more than 2-hop, may involve nested queries, multiple aggregations, complex JOINs, complex custom knowledge, comparison with non-trivial metrics, or reasoning over multiple entities (< 20%)
+    - level-nightmare       # Deep analytical queries, heavy reasoning or hypothetical scenarios, decision making or statistical analysis, complex formulas or multiple layers of nested queries, very rare (< 5%)
+
+    # Query language tags (multiple tags can apply)
+    - lang-english          # Queries that uses English as the query language
+    - lang-chinese          # Queries that uses Chinese as the query language
+
+    # Query type tags (multiple tags can apply)
+    - type-basic            # Basic queries that does not fall into other types
+    - type-fact             # Factual (e.g., region, project name, exchange, ...) lookup queries
+    - type-grouped          # GROUP BY in queries, and multiple groups with hierarchies are expected in the result instead of aggregated single value
+    - type-top-bot          # TOP / BOTTOM N queries (LIMIT / OFFSET with ORDER BY)
+    - type-rank             # Asking the rank of something: RANK / DENSE_RANK / ...
+    - type-comparison       # Comparing two or multiple entities
+    - type-multi-hop        # 2-hop or more hop reasoning
+    - type-time-trend       # Asking to plot trend or get data about a consecutive period time
+    - type-breakdown        # Specifically, "breakdown analysis" queries
+    - type-analytical       # Complex analytical queries involving calculations or statistical analysis
+    - type-display          # Visualizations, charts, pie or trends, etc.
+
+    # Query characteristic tags (multiple tags can apply)
+    - trait-synonym         # Non-trivial Synonyms are used in the query (e.g., EU vs European Union, NovDyn vs Nova Dynamics, ...)
+    - trait-indicator       # Queries that explicitly require non-trivial formulas to compute the result, e.g., BCR, CAGR, HHI, forecast accuracy ... (e.g., YoY, QoQ, margin, are considered trivial)
+    - trait-schema-grounded # `"schema"` is provided in the query context
+    - trait-time-aware      # queries that must require "last year", "this month" or similar time context understanding
+    - trait-time-cutoff     # queries that are actually affected by the query time (e.g., querying yearly data at August)
+    - trait-knowledge       # knowledge-intensive queries that MUST require external or domain knowledge to answer (e.g., "Star Products" definition)
+
+    # Query value tags (multiple tags can apply)
+    - value-amount          # The result involves true revenue / expenses (most queries)
+    - value-forecast        # The result uses forecast column in BUDGET_AND_FORECAST_* tables
+    - value-budget          # The result uses budget column in BUDGET_AND_FORECAST_* tables
+    - value-target          # The result uses target column in BUDGET_AND_FORECAST_* tables
+
+    # Query period tags
+    - period-monthly        # Single or a few months are enumerated (only about user intent, not how SQL implements it)
+    - period-quarterly      # Only quarterly periods are used (03, 06, 09, 12)
+    - period-half-yearly    # Only half-yearly periods are used (06, 12)
+    - period-yearly         # Only yearly periods are used
+    - period-multi          # Multiple period types are used (e.g., monthly and yearly)

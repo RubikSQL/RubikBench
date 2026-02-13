@@ -1,0 +1,8 @@
+China's Coastal Provinces refer to provinces that have coastlines along the Pacific Ocean. These provinces are typically more economically developed due to maritime trade and access to international markets.
+
+In the APEX database, the following Chinese coastal provinces are represented:
+- Guangdong (South China Sea, Pearl River Delta, includes Guangzhou and Shenzhen)
+- Shanghai (East China Sea, Yangtze River Delta, major financial center - municipality with provincial status)
+- Tianjin (Bohai Sea, near Beijing - municipality with provincial status)
+
+Note: While other Chinese coastal provinces exist, only the above 3 are present in the APEX database.

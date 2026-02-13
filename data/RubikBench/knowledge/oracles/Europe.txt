@@ -1,0 +1,2 @@
+Europe includes four sales regions: Western Europe, Southern Europe, Eastern Europe and Nordic. Specifically, there are 9 countries with APEX sales offices: Germany, United Kingdom, France, Netherlands, Ireland, Denmark, Finland, Italy and Russia.
+Among the 9 countries, United Kingdom and Russia are NOT European Union (EU) members, the other 7 countries are EU members. Be aware of the distinction between Europe and EU when answering user questions.

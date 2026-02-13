@@ -1,0 +1,1 @@
+Half-yearly data should be aggregated at 06 and 12 month ends, H1 = ytd 06, H2 = ytd 12 - ytd 06.

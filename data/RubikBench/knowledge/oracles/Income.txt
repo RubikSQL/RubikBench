@@ -1,0 +1,2 @@
+When the user asks about "income", "revenue" or any real amount report items, use the `INCOME_*` tables or `SALES_LEDGER`. The `INCOME_*` tables contain aggregated statistics, while `SALES_LEDGER` contains project, contract and dealers information.
+Notice that in INCOME tables and SALES_LEDGER, you should ALWAYS select the column(s) with the correct currency and caliber in the name. Unless explicitly instructed otherwise, use `_cny` if the user asks about only China, `_eur` for only European countries, and `_usd` by default. Similarly, use caliber `_a` by default.

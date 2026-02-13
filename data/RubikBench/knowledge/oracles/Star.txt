@@ -1,0 +1,2 @@
+A Star product is a product that has been growing with > 10% QoQ revenue growth for at least 3 consecutive quarters (the growth must be lasting until the query date).
+For example, when querying about 2023 Q3 star products, the filter condition should be that all of 2023 Q3, 2023 Q2, and 2023 Q1 have > 10% QoQ revenue growth.

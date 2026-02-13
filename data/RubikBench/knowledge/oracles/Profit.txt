@@ -1,0 +1,4 @@
+(Net) Profit = Revenue (lv0) - Expense (lv0)
+Profit Margin = Profit / Revenue
+Equipment Profit = Equipment Revenue (lv2) - Equipment Cost (lv2)
+Service Profit = Service Revenue (lv2) - Service Cost (lv2)

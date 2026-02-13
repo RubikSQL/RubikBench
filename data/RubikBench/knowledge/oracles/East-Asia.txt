@@ -1,0 +1,2 @@
+East Asia means sales_region_name_en="East Asia", which includes three countries with sales offices: Japan, South Korea, and India.
+Notice that though China is geographically in East Asia, it is NOT considered part of the East Asia sales region but rather an independent sales region due to its large market volume. Similarly, India is geographically in South Asia but is grouped under East Asia for sales purposes.

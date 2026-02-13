@@ -1,0 +1,9 @@
+The US West Coast refers to the westernmost states of the United States, bordering the Pacific Ocean. These states are known for their technology industries, entertainment, and innovation hubs.
+
+In the APEX database, the following US West Coast states are represented:
+- California (largest economy among US states, home to Silicon Valley, Hollywood, major tech companies)
+- Washington (home to Seattle, major tech hub with companies like Microsoft and Amazon)
+
+Other West Coast states not in the database include Oregon.
+
+Note: Some analyses also include Western states like Nevada and Arizona as part of the "Western US" region, but the term "West Coast" specifically refers to Pacific-bordering states. Texas is sometimes considered a tech hub but is in the South/Southwest region, not the West Coast.

@@ -1,0 +1,1 @@
+Quarterly data should be aggregated at 03, 06, 09, and 12 month ends, e.g., Q2 = ptd 04 + ptd 05 + ptd 06 = ytd 06 - ytd 03.

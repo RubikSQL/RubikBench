@@ -1,0 +1,2 @@
+Forecast Accuracy per month = 1 - ABS(Yearly Forecast - Yearly Actual) / Yearly Actual
+Remember that Forecast of YYYYMM is the forecast value of the WHOLE YEAR based on YYYYMM's data, so only when YYYY12's real amount is available can we compute the accuracy.

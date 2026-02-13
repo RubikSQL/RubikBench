@@ -1,0 +1,7 @@
+The ROI is computed as the ratio of the net profit to the cost of the investment, expressed as a percentage.
+For example, the Equipment ROI is (Equipment Revenue - Equipment Cost) / Equipment Cost * 100%.
+Similarly, Sales ROI is calculated as (Net Sales Revenue - Cost of Sales) / Cost of Sales * 100%.
+Total ROI is calculated as (Total Revenue - Total Expense) / Total Expense * 100%.
+By default the ROI is considered total ROI unless specified otherwise (e.g., Equipment ROI, Sales ROI).
+Usually you should display ROI as a percentage with 3 decimal places.
+When comparing ROIs across different periods (e.g., YoY, QoQ, MoM), usually PP (Percentage Point) is used by default, which only computes the difference between two ROIs, unless specified otherwise (e.g., Percentage Change).

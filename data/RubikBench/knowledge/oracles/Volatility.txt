@@ -1,0 +1,1 @@
+When assessing the Volatility/Stability of growth, we use: Volatility = Standard Deviation of Growth Rates.

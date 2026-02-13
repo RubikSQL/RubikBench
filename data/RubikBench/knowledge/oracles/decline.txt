@@ -1,0 +1,2 @@
+When counting revenue "decline" for dimensions, only show the ones with negative growth compared to the prior period.
+This behavior is different from "growth" which shows all the growth rates (regardless of positive or negative).

@@ -1,0 +1,14 @@
+The G20 (Group of Twenty) is an international forum for the governments and central bank governors from 19 countries and the European Union, representing the world's major economies.
+Among the 22 countries in the database with APEX sales offices, 16 are G20 members:
+- North America: United States, Canada
+- Latin America: Brazil, Argentina
+- Western Europe: United Kingdom, Germany, France
+- Southern Europe: Italy
+- Eastern Europe: Russia
+- China: China
+- East Asia: Japan, India, South Korea
+- Oceania: Australia
+- Middle East: Saudi Arabia
+- Africa: South Africa
+Note: The G20 includes the EU as a member, plus the 19 individual countries. EU should not be counted as a separate country, and Indonesia, Mexico, Turkey are not present in APEX database.
+So we should identify the 16 G20 countries listed above when asked about G20 countries in the APEX database.

@@ -1,0 +1,4 @@
+HHI (Herfindahl–Hirschman Index) is a standard measure of market concentration: for any set of regions/products/customers/..., the HHI is computed by summing the squares of the shares of items in the set.
+Notice that when computing concentration, the result should be just the sum of squared shares, which does not multiply 10,000; when reporting HHI, it is common to multiply the result by 10,000.
+For example, when asking about sales regions' revenue HHI, compute the revenue share of each sales region, square them, and sum them up to get the HHI.
+When asking about things like top-10 contract revenue HHI, compute the revenue share of each of the top-10 contracts, square them, and sum them up to get the HHI (which is smaller than the overall contract revenue HHI).

@@ -1,0 +1,1873 @@
+# RubikBench English Synonyms
+# 同义词配置文件 - 用于自然语言查询中的词汇匹配
+# 格式: standard_word 为标准词，synonyms 为同义词列表
+
+# ================== 区域维度 - Regions ==================
+
+# 国内外标志 - Overseas Flag
+- standard_word: Domestic
+  synonyms:
+    - Local
+    - Home Market
+    - Inland
+  type: enum
+  field: overseas_flag_name_en
+- standard_word: Overseas
+  synonyms:
+    - Foreign
+    - International
+    - Export
+  type: enum
+  field: overseas_flag_name_en
+
+# 销售大区 - Sales Regions
+- standard_word: East Asia
+  synonyms:
+    - Eastern Asia
+    - Asia East
+  type: enum
+  field: sales_region_name_en
+- standard_word: Latin America
+  synonyms:
+    - LATAM
+    - South America
+    - Central and South America
+  type: enum
+  field: sales_region_name_en
+- standard_word: China
+  synonyms:
+    - CN Region
+    - Chinese Market
+  type: enum
+  field: sales_region_name_en
+- standard_word: North America
+  synonyms:
+    - NA
+    - NAM
+  type: enum
+  field: sales_region_name_en
+- standard_word: Oceania
+  synonyms:
+    - Australia Region
+    - Pacific Region
+  type: enum
+  field: sales_region_name_en
+- standard_word: Western Europe
+  synonyms:
+    - West Europe
+    - WE
+  type: enum
+  field: sales_region_name_en
+- standard_word: Southern Europe
+  synonyms:
+    - South Europe
+    - SE Europe
+  type: enum
+  field: sales_region_name_en
+- standard_word: Eastern Europe
+  synonyms:
+    - East Europe
+    - EE
+  type: enum
+  field: sales_region_name_en
+- standard_word: Nordic Region
+  synonyms:
+    - Nordics
+    - Scandinavia
+  type: enum
+  field: sales_region_name_en
+- standard_word: Africa
+  synonyms:
+    - African Region
+    - AFR
+  type: enum
+  field: sales_region_name_en
+- standard_word: Middle East
+  synonyms:
+    - ME
+    - MENA
+  type: enum
+  field: sales_region_name_en
+
+# 国家 - Countries
+- standard_word: Argentina
+  synonyms:
+    - AR
+    - ARG
+  type: enum
+  field: country_name_en
+- standard_word: Australia
+  synonyms:
+    - AU
+    - AUS
+    - Aussie
+  type: enum
+  field: country_name_en
+- standard_word: Brazil
+  synonyms:
+    - BR
+    - BRA
+  type: enum
+  field: country_name_en
+- standard_word: Canada
+  synonyms:
+    - CA
+    - CAN
+  type: enum
+  field: country_name_en
+- standard_word: China
+  synonyms:
+    - CN
+    - PRC
+    - People's Republic of China
+  type: enum
+  field: country_name_en
+- standard_word: Denmark
+  synonyms:
+    - DK
+    - DNK
+  type: enum
+  field: country_name_en
+- standard_word: Egypt
+  synonyms:
+    - EG
+    - EGY
+  type: enum
+  field: country_name_en
+- standard_word: Finland
+  synonyms:
+    - FI
+    - FIN
+  type: enum
+  field: country_name_en
+- standard_word: France
+  synonyms:
+    - FR
+    - FRA
+  type: enum
+  field: country_name_en
+- standard_word: Germany
+  synonyms:
+    - DE
+    - Deutschland
+  type: enum
+  field: country_name_en
+- standard_word: India
+  synonyms:
+    - IN
+    - IND
+  type: enum
+  field: country_name_en
+- standard_word: Ireland
+  synonyms:
+    - IE
+    - IRL
+  type: enum
+  field: country_name_en
+- standard_word: Italy
+  synonyms:
+    - IT
+    - ITA
+  type: enum
+  field: country_name_en
+- standard_word: Japan
+  synonyms:
+    - JP
+    - JPN
+  type: enum
+  field: country_name_en
+- standard_word: Netherlands
+  synonyms:
+    - NL
+    - Holland
+  type: enum
+  field: country_name_en
+- standard_word: Russia
+  synonyms:
+    - RU
+    - RUS
+  type: enum
+  field: country_name_en
+- standard_word: Saudi Arabia
+  synonyms:
+    - SA
+    - KSA
+  type: enum
+  field: country_name_en
+- standard_word: South Africa
+  synonyms:
+    - ZA
+    - RSA
+  type: enum
+  field: country_name_en
+- standard_word: South Korea
+  synonyms:
+    - Korea
+    - SK
+    - KR
+  type: enum
+  field: country_name_en
+- standard_word: United Arab Emirates
+  synonyms:
+    - UAE
+    - Emirates
+  type: enum
+  field: country_name_en
+- standard_word: United Kingdom
+  synonyms:
+    - UK
+    - Britain
+    - GB
+  type: enum
+  field: country_name_en
+- standard_word: United States
+  synonyms:
+    - USA
+    - US
+    - America
+  type: enum
+  field: country_name_en
+
+# 大区 - National Areas (中国)
+- standard_word: Central China
+  synonyms:
+    - Central Region
+  type: enum
+  field: national_area_name_en
+- standard_word: East China
+  synonyms:
+    - Eastern China
+    - East Region
+  type: enum
+  field: national_area_name_en
+- standard_word: North China
+  synonyms:
+    - Northern China
+    - North Region
+  type: enum
+  field: national_area_name_en
+- standard_word: Northwest
+  synonyms:
+    - Northwest China
+    - NW Region
+  type: enum
+  field: national_area_name_en
+- standard_word: South China
+  synonyms:
+    - Southern China
+    - South Region
+  type: enum
+  field: national_area_name_en
+
+# 大区 - National Areas (美国)
+- standard_word: US West
+  synonyms:
+    - Western US
+    - West Coast
+    - American West
+  type: enum
+  field: national_area_name_en
+- standard_word: US Midwest
+  synonyms:
+    - Midwest
+    - Middle West
+    - Central US
+  type: enum
+  field: national_area_name_en
+- standard_word: US Northeast
+  synonyms:
+    - Northeast
+    - Northeastern US
+    - East Coast
+  type: enum
+  field: national_area_name_en
+- standard_word: US South
+  synonyms:
+    - South
+    - Southern US
+    - American South
+  type: enum
+  field: national_area_name_en
+
+# 大区 - National Areas (德国)
+- standard_word: Berlin-Brandenburg
+  synonyms:
+    - Berlin Region
+    - Brandenburg
+  type: enum
+  field: national_area_name_en
+- standard_word: Southern Germany
+  synonyms:
+    - South Germany
+    - Süddeutschland
+  type: enum
+  field: national_area_name_en
+
+# 大区 - National Areas (日本)
+- standard_word: Kanto
+  synonyms:
+    - Kanto Region
+    - Greater Tokyo Area
+  type: enum
+  field: national_area_name_en
+- standard_word: Kansai
+  synonyms:
+    - Kansai Region
+    - Kinki Region
+  type: enum
+  field: national_area_name_en
+
+# 大区 - National Areas (其他)
+- standard_word: England
+  synonyms:
+    - English Region
+  type: enum
+  field: national_area_name_en
+- standard_word: Île-de-France
+  synonyms:
+    - Paris Region
+    - IDF
+  type: enum
+  field: national_area_name_en
+- standard_word: Auvergne-Rhône-Alpes
+  synonyms:
+    - Lyon Region
+    - ARA
+  type: enum
+  field: national_area_name_en
+- standard_word: Lombardy
+  synonyms:
+    - Lombardia
+  type: enum
+  field: national_area_name_en
+- standard_word: Lazio
+  synonyms:
+    - Latium
+  type: enum
+  field: national_area_name_en
+- standard_word: Ontario
+  synonyms:
+    - ON
+  type: enum
+  field: national_area_name_en
+- standard_word: British Columbia
+  synonyms:
+    - BC
+  type: enum
+  field: national_area_name_en
+- standard_word: Victoria
+  synonyms:
+    - VIC
+  type: enum
+  field: national_area_name_en
+- standard_word: New South Wales
+  synonyms:
+    - NSW
+  type: enum
+  field: national_area_name_en
+- standard_word: Leinster
+  synonyms:
+    - Dublin Region
+  type: enum
+  field: national_area_name_en
+- standard_word: North Holland
+  synonyms:
+    - Noord-Holland
+  type: enum
+  field: national_area_name_en
+- standard_word: Capital Region
+  synonyms:
+    - Copenhagen Region
+    - Hovedstaden
+  type: enum
+  field: national_area_name_en
+- standard_word: Uusimaa
+  synonyms:
+    - Helsinki Region
+  type: enum
+  field: national_area_name_en
+
+# 城市 - Cities (中国)
+- standard_word: Beijing
+  synonyms:
+    - BJ
+    - Peking
+  type: enum
+  field: city_name_en
+- standard_word: Shanghai
+  synonyms:
+    - SH
+  type: enum
+  field: city_name_en
+- standard_word: Guangzhou
+  synonyms:
+    - GZ
+    - Canton
+  type: enum
+  field: city_name_en
+- standard_word: Wuhan
+  synonyms:
+    - WH
+  type: enum
+  field: city_name_en
+- standard_word: Changsha
+  synonyms:
+    - CS
+  type: enum
+  field: city_name_en
+- standard_word: Shijiazhuang
+  synonyms:
+    - SJZ
+  type: enum
+  field: city_name_en
+- standard_word: Nanning
+  synonyms:
+    - NN
+  type: enum
+  field: city_name_en
+- standard_word: Tianjin
+  synonyms:
+    - TJ
+  type: enum
+  field: city_name_en
+- standard_word: Dunhuang
+  synonyms:
+    - DH
+  type: enum
+  field: city_name_en
+
+# 城市 - Cities (美国)
+- standard_word: New York City
+  synonyms:
+    - NYC
+    - New York
+    - NY
+  type: enum
+  field: city_name_en
+- standard_word: Los Angeles
+  synonyms:
+    - LA
+    - LAX
+  type: enum
+  field: city_name_en
+- standard_word: San Francisco
+  synonyms:
+    - SF
+    - SFO
+  type: enum
+  field: city_name_en
+- standard_word: Chicago
+  synonyms:
+    - CHI
+    - ORD
+  type: enum
+  field: city_name_en
+- standard_word: Dallas
+  synonyms:
+    - DFW
+  type: enum
+  field: city_name_en
+- standard_word: Miami
+  synonyms:
+    - MIA
+  type: enum
+  field: city_name_en
+- standard_word: Seattle
+  synonyms:
+    - SEA
+  type: enum
+  field: city_name_en
+- standard_word: Phoenix
+  synonyms:
+    - PHX
+  type: enum
+  field: city_name_en
+- standard_word: Las Vegas
+  synonyms:
+    - LV
+    - Vegas
+  type: enum
+  field: city_name_en
+
+# 城市 - Cities (欧洲)
+- standard_word: London
+  synonyms:
+    - LON
+    - LDN
+  type: enum
+  field: city_name_en
+- standard_word: Manchester
+  synonyms:
+    - MAN
+  type: enum
+  field: city_name_en
+- standard_word: Paris
+  synonyms:
+    - PAR
+  type: enum
+  field: city_name_en
+- standard_word: Lyon
+  synonyms:
+    - LYS
+  type: enum
+  field: city_name_en
+- standard_word: Berlin
+  synonyms:
+    - BER
+  type: enum
+  field: city_name_en
+- standard_word: Munich
+  synonyms:
+    - MUC
+    - Munchen
+  type: enum
+  field: city_name_en
+- standard_word: Amsterdam
+  synonyms:
+    - AMS
+  type: enum
+  field: city_name_en
+- standard_word: Milan
+  synonyms:
+    - MIL
+    - Milano
+  type: enum
+  field: city_name_en
+- standard_word: Rome
+  synonyms:
+    - ROM
+    - Roma
+  type: enum
+  field: city_name_en
+- standard_word: Moscow
+  synonyms:
+    - MOW
+  type: enum
+  field: city_name_en
+- standard_word: Copenhagen
+  synonyms:
+    - CPH
+  type: enum
+  field: city_name_en
+- standard_word: Helsinki
+  synonyms:
+    - HEL
+  type: enum
+  field: city_name_en
+- standard_word: Dublin
+  synonyms:
+    - DUB
+  type: enum
+  field: city_name_en
+
+# 城市 - Cities (亚洲)
+- standard_word: Tokyo
+  synonyms:
+    - TYO
+  type: enum
+  field: city_name_en
+- standard_word: Osaka
+  synonyms:
+    - OSA
+    - KIX
+  type: enum
+  field: city_name_en
+- standard_word: Seoul
+  synonyms:
+    - SEL
+    - ICN
+  type: enum
+  field: city_name_en
+- standard_word: Busan
+  synonyms:
+    - PUS
+  type: enum
+  field: city_name_en
+- standard_word: Mumbai
+  synonyms:
+    - BOM
+    - Bombay
+  type: enum
+  field: city_name_en
+- standard_word: Delhi
+  synonyms:
+    - DEL
+    - New Delhi
+  type: enum
+  field: city_name_en
+- standard_word: Dubai
+  synonyms:
+    - DXB
+  type: enum
+  field: city_name_en
+- standard_word: Riyadh
+  synonyms:
+    - RUH
+  type: enum
+  field: city_name_en
+
+# 城市 - Cities (大洋洲)
+- standard_word: Sydney
+  synonyms:
+    - SYD
+  type: enum
+  field: city_name_en
+- standard_word: Melbourne
+  synonyms:
+    - MEL
+  type: enum
+  field: city_name_en
+
+# 城市 - Cities (南美洲)
+- standard_word: Buenos Aires
+  synonyms:
+    - BA
+    - BUE
+  type: enum
+  field: city_name_en
+- standard_word: Sao Paulo
+  synonyms:
+    - SP
+    - São Paulo
+    - GRU
+  type: enum
+  field: city_name_en
+
+# 城市 - Cities (非洲)
+- standard_word: Cairo
+  synonyms:
+    - CAI
+  type: enum
+  field: city_name_en
+- standard_word: Johannesburg
+  synonyms:
+    - JNB
+    - Joburg
+  type: enum
+  field: city_name_en
+
+# 城市 - Cities (加拿大)
+- standard_word: Toronto
+  synonyms:
+    - YYZ
+    - TO
+  type: enum
+  field: city_name_en
+- standard_word: Vancouver
+  synonyms:
+    - YVR
+    - VAN
+  type: enum
+  field: city_name_en
+
+# ================== 经销商维度 - Channels ==================
+
+# 经销商一级 - Dealer Level 1
+- standard_word: Proprietary Channel
+  synonyms:
+    - Proprietary
+    - Own Channel
+    - Direct Channel
+  type: enum
+  field: dealer_lv1_name_en
+- standard_word: Syndicate Channel
+  synonyms:
+    - Syndicate
+    - Partner Channel
+    - Alliance Channel
+  type: enum
+  field: dealer_lv1_name_en
+
+# 经销商二级 - Dealer Level 2
+- standard_word: Apex National Distribution
+  synonyms:
+    - Apex National
+    - AND
+  type: enum
+  field: dealer_lv2_name_en
+- standard_word: Apex Zenith Operations
+  synonyms:
+    - Apex Zenith
+    - AZO
+  type: enum
+  field: dealer_lv2_name_en
+- standard_word: Horizon Exchange Collective
+  synonyms:
+    - Horizon Exchange
+    - HEC
+  type: enum
+  field: dealer_lv2_name_en
+- standard_word: Nebula Logistics Syndicate
+  synonyms:
+    - Nebula Logistics
+    - NLS
+  type: enum
+  field: dealer_lv2_name_en
+
+# 经销商三级 - Dealer Level 3
+- standard_word: Apex Obsidian Network
+  synonyms:
+    - Obsidian Network
+    - AON
+  type: enum
+  field: dealer_lv3_name_en
+- standard_word: Apex Vanguard Network
+  synonyms:
+    - Vanguard Network
+    - AVN
+  type: enum
+  field: dealer_lv3_name_en
+- standard_word: Apex Zenith Frontier
+  synonyms:
+    - Zenith Frontier
+    - AZF
+  type: enum
+  field: dealer_lv3_name_en
+- standard_word: Horizon Aurora Sector
+  synonyms:
+    - Aurora Sector
+    - HAS
+  type: enum
+  field: dealer_lv3_name_en
+- standard_word: Horizon Meridian Sector
+  synonyms:
+    - Meridian Sector
+    - HMS
+  type: enum
+  field: dealer_lv3_name_en
+- standard_word: Horizon Prime Sector
+  synonyms:
+    - Prime Sector
+    - HPS
+  type: enum
+  field: dealer_lv3_name_en
+- standard_word: Nebula Northern Quadrant
+  synonyms:
+    - Northern Quadrant
+    - NNQ
+  type: enum
+  field: dealer_lv3_name_en
+- standard_word: Nebula Southern Quadrant
+  synonyms:
+    - Southern Quadrant
+    - NSQ
+  type: enum
+  field: dealer_lv3_name_en
+
+# ================== 客户维度 - Customers ==================
+
+# 客户一级 - Customer Level 1
+- standard_word: Enterprise
+  synonyms:
+    - ENT
+  type: enum
+  field: cust_lv1_name_en
+- standard_word: Enterprise Group
+  synonyms:
+    - EG
+  type: enum
+  field: cust_lv1_name_en
+- standard_word: Enterprise Subsidiary
+  synonyms:
+    - ES
+  type: enum
+  field: cust_lv1_name_en
+- standard_word: Large Enterprise Group
+  synonyms:
+    - LEG
+    - Large Enterprise
+  type: enum
+  field: cust_lv1_name_en
+
+# 客户二级 - Customer Level 2
+- standard_word: Aurora Nexus Corporation
+  synonyms:
+    - ANC
+    - Aurora Nexus
+  type: enum
+  field: cust_lv2_name_en
+- standard_word: Crimson Horizon Group
+  synonyms:
+    - CHG
+    - Crimson Horizon
+  type: enum
+  field: cust_lv2_name_en
+- standard_word: Eclipse Forge Industries
+  synonyms:
+    - EFI
+  type: enum
+  field: cust_lv2_name_en
+- standard_word: Enterprise Group
+  synonyms:
+    - EG
+  type: enum
+  field: cust_lv2_name_en
+- standard_word: Nebula Dynamics Consortium
+  synonyms:
+    - NDC
+  type: enum
+  field: cust_lv2_name_en
+- standard_word: Obsidian Vanguard Enterprises
+  synonyms:
+    - OVE
+  type: enum
+  field: cust_lv2_name_en
+- standard_word: Quantum Pinnacle Alliance
+  synonyms:
+    - QPA
+  type: enum
+  field: cust_lv2_name_en
+- standard_word: Subsidiary Group
+  synonyms:
+    - SG
+  type: enum
+  field: cust_lv2_name_en
+- standard_word: Titan Forge Holdings
+  synonyms:
+    - TFH
+  type: enum
+  field: cust_lv2_name_en
+
+# ================== 产品维度 - Products ==================
+
+# 产品大类 - Product Category
+- standard_word: Accessories
+  synonyms:
+    - Parts
+    - Components
+    - Auto Parts
+  type: enum
+  field: prod_lv0_name_en
+- standard_word: Automobiles
+  synonyms:
+    - Vehicles
+    - Cars
+    - Autos
+  type: enum
+  field: prod_lv0_name_en
+- standard_word: Services
+  synonyms:
+    - Service Products
+    - Service Items
+  type: enum
+  field: prod_lv0_name_en
+
+# 产品一级 - Product Level 1
+- standard_word: After-Sales
+  synonyms:
+    - Aftersales
+    - Post-Sales
+  type: enum
+  field: prod_lv1_name_en
+- standard_word: Body and Exterior
+  synonyms:
+    - Body Parts
+    - Exterior Parts
+  type: enum
+  field: prod_lv1_name_en
+- standard_word: Braking System
+  synonyms:
+    - Brake System
+    - Brakes
+  type: enum
+  field: prod_lv1_name_en
+- standard_word: Climate Control
+  synonyms:
+    - HVAC
+    - AC System
+  type: enum
+  field: prod_lv1_name_en
+- standard_word: Cyberdyne Vehicle Systems
+  synonyms:
+    - CVS
+    - Cyberdyne
+  type: enum
+  field: prod_lv1_name_en
+- standard_word: Drivetrain
+  synonyms:
+    - Powertrain
+    - Drive System
+  type: enum
+  field: prod_lv1_name_en
+- standard_word: Electrical System
+  synonyms:
+    - Electronics
+    - Electrical
+  type: enum
+  field: prod_lv1_name_en
+- standard_word: Engine System
+  synonyms:
+    - Engine
+    - Motor System
+  type: enum
+  field: prod_lv1_name_en
+- standard_word: Finance
+  synonyms:
+    - Financial Services
+    - Financing
+  type: enum
+  field: prod_lv1_name_en
+- standard_word: Galactic Motors Group
+  synonyms:
+    - GMG
+    - Galactic Motors
+  type: enum
+  field: prod_lv1_name_en
+- standard_word: Interior
+  synonyms:
+    - Interior Parts
+    - Cabin
+  type: enum
+  field: prod_lv1_name_en
+- standard_word: Mobility Services
+  synonyms:
+    - Mobility
+    - Transport Services
+  type: enum
+  field: prod_lv1_name_en
+- standard_word: Nova Dynamics
+  synonyms:
+    - ND
+    - Nova
+  type: enum
+  field: prod_lv1_name_en
+- standard_word: Safety Systems
+  synonyms:
+    - Safety
+    - Safety Features
+  type: enum
+  field: prod_lv1_name_en
+- standard_word: Shinra Motor Corp
+  synonyms:
+    - SMC
+    - Shinra Motors
+  type: enum
+  field: prod_lv1_name_en
+- standard_word: Suspension and Steering
+  synonyms:
+    - Suspension
+    - Steering System
+  type: enum
+  field: prod_lv1_name_en
+- standard_word: Tyrell Automotive Group
+  synonyms:
+    - TAG
+    - Tyrell Auto
+  type: enum
+  field: prod_lv1_name_en
+- standard_word: Value-Added Services
+  synonyms:
+    - VAS
+    - Premium Services
+  type: enum
+  field: prod_lv1_name_en
+- standard_word: Weyland Motors Corp
+  synonyms:
+    - WMC
+    - Weyland Motors
+  type: enum
+  field: prod_lv1_name_en
+
+# 产品二级 - Product Level 2
+- standard_word: ABS System
+  synonyms:
+    - AS
+    - ABS
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: AC System
+  synonyms:
+    - Air Conditioning
+    - AC
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Acheron Classics
+  synonyms:
+    - AC
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Airbags
+  synonyms:
+    - Air Bags
+    - SRS
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Auto Loans
+  synonyms:
+    - AL
+    - Car Loans
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Battery System
+  synonyms:
+    - BS
+    - Battery
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Beskar Forge Autoworks
+  synonyms:
+    - Beskar Forge
+    - BFA
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Body Panels
+  synonyms:
+    - BP
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Bradbury Dynamics
+  synonyms:
+    - BD
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Brake Components
+  synonyms:
+    - BC
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Bumpers and Grilles
+  synonyms:
+    - BAG
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Calpamos Mobility
+  synonyms:
+    - CM
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Car Sharing
+  synonyms:
+    - CS
+    - Carsharing
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Celestia Circuitry
+  synonyms:
+    - CC
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Charging Solutions
+  synonyms:
+    - EV Charging
+    - Charging
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: ChronoDrive Innovations
+  synonyms:
+    - CI
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Co-Branded Credit Cards
+  synonyms:
+    - CCC
+    - Credit Cards
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Control Modules
+  synonyms:
+    - CM
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Cooling System
+  synonyms:
+    - CS
+    - Cooling
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Coruscant Cruisers
+  synonyms:
+    - Coruscant
+    - CC
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Cosmo Dynamics
+  synonyms:
+    - CD
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Dashboard
+  synonyms:
+    - Dash
+    - Instrument Panel
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Differential
+  synonyms:
+    - Diff
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Door Components
+  synonyms:
+    - DC
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Driveshaft
+  synonyms:
+    - Drive Shaft
+    - DS
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Emblems and Trim
+  synonyms:
+    - EAT
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Endor Electrodrive
+  synonyms:
+    - Endor
+    - EE
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Engine Core
+  synonyms:
+    - EC
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Esper Industrial
+  synonyms:
+    - EI
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Exhaust System
+  synonyms:
+    - ES
+    - Exhaust
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Exterior Mirrors
+  synonyms:
+    - EM
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Fiorina Industrial
+  synonyms:
+    - FI
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Fuel System
+  synonyms:
+    - FS
+    - Fuel
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Gaia Transport
+  synonyms:
+    - GT
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Genisys Smart
+  synonyms:
+    - GS
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Hades Motors
+  synonyms:
+    - HM
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Hadley's Hope
+  synonyms:
+    - HH
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Heating System
+  synonyms:
+    - HS
+    - Heating
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Highwind Engineering
+  synonyms:
+    - HE
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Hoth Haulers
+  synonyms:
+    - Hoth
+    - HH
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Hyperion Hybrids
+  synonyms:
+    - Hyperion
+    - HH
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: In-Car Entertainment
+  synonyms:
+    - IE
+    - ICE
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Infiltrator Dynamics
+  synonyms:
+    - ID
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Insurance
+  synonyms:
+    - Auto Insurance
+    - Car Insurance
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Intake System
+  synonyms:
+    - IS
+    - Intake
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Interior Lighting
+  synonyms:
+    - IL
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Judgment Racing
+  synonyms:
+    - JR
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Kalm Mobility
+  synonyms:
+    - KM
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Leasing
+  synonyms:
+    - Auto Leasing
+    - Car Lease
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Legion Fleet
+  synonyms:
+    - LF
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Lighting System
+  synonyms:
+    - LS
+    - Lighting
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Maintenance Packages
+  synonyms:
+    - MP
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Mako Electric
+  synonyms:
+    - Mako
+    - ME
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Mandalorian Motors
+  synonyms:
+    - Mando Motors
+    - MM
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Membership Services
+  synonyms:
+    - MS
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Midgar Motors
+  synonyms:
+    - Midgar
+    - MGM
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Naboo Nimbus
+  synonyms:
+    - Naboo
+    - NN
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Navigation Services
+  synonyms:
+    - NS
+    - Nav
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Nebula NX Concepts
+  synonyms:
+    - Nebula NX
+    - NNX
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Nexus Systems
+  synonyms:
+    - Nexus
+    - NS
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Nibelheim Motors
+  synonyms:
+    - NM
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Nostromo Heavy
+  synonyms:
+    - Nostromo
+    - NH
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: OTA Upgrades
+  synonyms:
+    - OU
+    - Over-The-Air
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Off-World Mobility
+  synonyms:
+    - OM
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Photon Phaeton Works
+  synonyms:
+    - PPW
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Prometheus Performance
+  synonyms:
+    - Prometheus
+    - PP
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Quantum Quattro Systems
+  synonyms:
+    - Quantum Quattro
+    - QQS
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Replicant Motors
+  synonyms:
+    - Replicant
+    - RM
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Resistance Motors
+  synonyms:
+    - Resistance
+    - RM
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Roadside Assistance
+  synonyms:
+    - RA
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Safety Features
+  synonyms:
+    - SF
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Seating System
+  synonyms:
+    - SS
+    - Seating
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Sebastian Performance
+  synonyms:
+    - SP
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Sensors
+  synonyms:
+    - Sensor System
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Skynet Automotive
+  synonyms:
+    - Skynet
+    - SA
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Skywalker Speedworks
+  synonyms:
+    - Skywalker
+    - SS
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Steering
+  synonyms:
+    - Steering Components
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Steering System
+  synonyms:
+    - SS
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Stellaris SynthCars
+  synonyms:
+    - SS
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Sulaco Series
+  synonyms:
+    - SS
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Suspension
+  synonyms:
+    - Suspension Components
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Tatooine TerrainTech
+  synonyms:
+    - Tatooine Tech
+    - TTT
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: TechCom Off-Road
+  synonyms:
+    - TO
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Titan Heavy
+  synonyms:
+    - TH
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Transmission
+  synonyms:
+    - Gearbox
+    - Trans
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Voight-Kampff Precision
+  synonyms:
+    - VP
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Vortex Velocity Labs
+  synonyms:
+    - Vortex Labs
+    - VVL
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Warranty Services
+  synonyms:
+    - WS
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Windows
+  synonyms:
+    - Window System
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Wiper System
+  synonyms:
+    - WS
+    - Wiper
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Wiring
+  synonyms:
+    - Wire Harness
+    - Wiring Harness
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Wutai Explorer
+  synonyms:
+    - WE
+  type: enum
+  field: prod_lv2_name_en
+- standard_word: Yutani Exploration
+  synonyms:
+    - YE
+  type: enum
+  field: prod_lv2_name_en
+
+# 产品三级 - Product Level 3 (部分常用车型)
+- standard_word: Atlas EV
+  synonyms:
+    - Atlas
+    - AEV
+  type: enum
+  field: prod_lv3_name_en
+- standard_word: Beskar Armored Truck
+  synonyms:
+    - Beskar Truck
+    - BAT
+  type: enum
+  field: prod_lv3_name_en
+- standard_word: Darksaber GT
+  synonyms:
+    - Darksaber
+    - DSGT
+  type: enum
+  field: prod_lv3_name_en
+- standard_word: Helios Hydrogen
+  synonyms:
+    - Helios H2
+    - HH2
+  type: enum
+  field: prod_lv3_name_en
+- standard_word: Jedi Starfighter
+  synonyms:
+    - Jedi Fighter
+    - Starfighter
+  type: enum
+  field: prod_lv3_name_en
+- standard_word: Millennium Falcon Edition
+  synonyms:
+    - Falcon Edition
+    - MFE
+  type: enum
+  field: prod_lv3_name_en
+- standard_word: Nexus 6
+  synonyms:
+    - N6
+    - Nexus Six
+  type: enum
+  field: prod_lv3_name_en
+- standard_word: Nexus 7
+  synonyms:
+    - N7
+    - Nexus Seven
+  type: enum
+  field: prod_lv3_name_en
+- standard_word: Nexus 8
+  synonyms:
+    - N8
+    - Nexus Eight
+  type: enum
+  field: prod_lv3_name_en
+- standard_word: Nexus 9
+  synonyms:
+    - N9
+    - Nexus Nine
+  type: enum
+  field: prod_lv3_name_en
+- standard_word: Nova Prime Hypercar
+  synonyms:
+    - Nova Prime
+    - NPH
+  type: enum
+  field: prod_lv3_name_en
+- standard_word: Red XIII
+  synonyms:
+    - Red 13
+    - Nanaki
+  type: enum
+  field: prod_lv3_name_en
+- standard_word: Sandcrawler Elite
+  synonyms:
+    - Sandcrawler
+    - SC Elite
+  type: enum
+  field: prod_lv3_name_en
+- standard_word: Sector 7
+  synonyms:
+    - S7
+    - Sector Seven
+  type: enum
+  field: prod_lv3_name_en
+- standard_word: T-1000 Liquid Metal
+  synonyms:
+    - T1000
+    - Liquid Metal
+  type: enum
+  field: prod_lv3_name_en
+- standard_word: T-16 Skyhopper
+  synonyms:
+    - T16
+    - Skyhopper
+  type: enum
+  field: prod_lv3_name_en
+- standard_word: T-800 Classics
+  synonyms:
+    - T800
+    - Terminator Classic
+  type: enum
+  field: prod_lv3_name_en
+- standard_word: T-3000 Nano
+  synonyms:
+    - T3000
+    - Nano
+  type: enum
+  field: prod_lv3_name_en
+- standard_word: T-X Terminator
+  synonyms:
+    - TX
+    - Terminator X
+  type: enum
+  field: prod_lv3_name_en
+- standard_word: Titan Hybrid X
+  synonyms:
+    - Titan X
+    - THX
+  type: enum
+  field: prod_lv3_name_en
+- standard_word: Vortex V12
+  synonyms:
+    - V12
+    - Vortex Twelve
+  type: enum
+  field: prod_lv3_name_en
+- standard_word: X-34 Landspeeder
+  synonyms:
+    - X34
+    - Landspeeder
+  type: enum
+  field: prod_lv3_name_en
+
+# ================== 报表项目维度 - Report Items ==================
+
+# 报表项大类 - Report Item Category
+- standard_word: Expense
+  synonyms:
+    - Cost
+    - Expenditure
+    - Spending
+  type: enum
+  field: report_item_lv0_name_en
+- standard_word: Revenue
+  synonyms:
+    - Income
+    - Sales
+    - Earnings
+  type: enum
+  field: report_item_lv0_name_en
+
+# 报表项一级 - Report Item Level 1
+- standard_word: Cost of Sales
+  synonyms:
+    - COGS
+    - Cost of Goods Sold
+    - Sales Cost
+  type: enum
+  field: report_item_lv1_name_en
+- standard_word: Income Tax Expense
+  synonyms:
+    - Tax Expense
+    - Income Tax
+    - Tax
+  type: enum
+  field: report_item_lv1_name_en
+- standard_word: Net Sales Revenue
+  synonyms:
+    - Net Sales
+    - Sales Revenue
+    - Net Revenue
+  type: enum
+  field: report_item_lv1_name_en
+- standard_word: Other Expenses
+  synonyms:
+    - Non-Operating Expenses
+    - Other Costs
+  type: enum
+  field: report_item_lv1_name_en
+- standard_word: Other Income
+  synonyms:
+    - Non-Operating Income
+    - Other Revenue
+  type: enum
+  field: report_item_lv1_name_en
+- standard_word: Period Expenses
+  synonyms:
+    - Operating Expenses
+    - OpEx
+    - Period Costs
+  type: enum
+  field: report_item_lv1_name_en
+
+# 报表项二级 - Report Item Level 2
+- standard_word: Administrative Expenses
+  synonyms:
+    - Admin Expenses
+    - G&A
+    - General Admin
+  type: enum
+  field: report_item_lv2_name_en
+- standard_word: Equipment Cost
+  synonyms:
+    - Hardware Cost
+    - Product Cost
+  type: enum
+  field: report_item_lv2_name_en
+- standard_word: Equipment Revenue
+  synonyms:
+    - Hardware Revenue
+    - Product Revenue
+  type: enum
+  field: report_item_lv2_name_en
+- standard_word: Income Tax
+  synonyms:
+    - Corporate Tax
+    - Tax Provision
+  type: enum
+  field: report_item_lv2_name_en
+- standard_word: Non-Operating Expenses
+  synonyms:
+    - Other Operating Expenses
+    - Misc Expenses
+  type: enum
+  field: report_item_lv2_name_en
+- standard_word: Non-Operating Income
+  synonyms:
+    - Other Operating Income
+    - Misc Income
+  type: enum
+  field: report_item_lv2_name_en
+- standard_word: Sales Period Cost
+  synonyms:
+    - SPC
+  type: enum
+  field: report_item_lv2_name_en
+- standard_word: Selling Expenses
+  synonyms:
+    - Sales Expenses
+    - S&M Expenses
+    - Distribution Costs
+  type: enum
+  field: report_item_lv2_name_en
+- standard_word: Service Cost
+  synonyms:
+    - Service Expense
+    - COS Service
+  type: enum
+  field: report_item_lv2_name_en
+- standard_word: Service Revenue
+  synonyms:
+    - Service Income
+    - Service Sales
+  type: enum
+  field: report_item_lv2_name_en
+
+# 报表项三级 - Report Item Level 3
+- standard_word: Administrative Department Expenses
+  synonyms:
+    - Admin Dept Costs
+    - Office Expenses
+  type: enum
+  field: report_item_lv3_name_en
+- standard_word: Agent Service Fees
+  synonyms:
+    - Agency Fees
+    - Commission Fees
+  type: enum
+  field: report_item_lv3_name_en
+- standard_word: Asset Disposal Income
+  synonyms:
+    - Asset Sale Income
+    - Disposal Gains
+  type: enum
+  field: report_item_lv3_name_en
+- standard_word: Charitable Donations
+  synonyms:
+    - Donations
+    - Charity
+  type: enum
+  field: report_item_lv3_name_en
+- standard_word: Current Income Tax
+  synonyms:
+    - Current Tax
+    - Tax Payable
+  type: enum
+  field: report_item_lv3_name_en
+- standard_word: Deferred Income Tax
+  synonyms:
+    - Deferred Tax
+    - DIT
+  type: enum
+  field: report_item_lv3_name_en
+- standard_word: Depreciation and Amortization
+  synonyms:
+    - D&A
+    - Depreciation
+    - Amortization
+  type: enum
+  field: report_item_lv3_name_en
+- standard_word: Disaster Loss
+  synonyms:
+    - Natural Disaster Loss
+    - Catastrophe Loss
+  type: enum
+  field: report_item_lv3_name_en
+- standard_word: Equipment Cost
+  synonyms:
+    - Hardware Cost
+  type: enum
+  field: report_item_lv3_name_en
+- standard_word: Equipment Revenue
+  synonyms:
+    - Hardware Revenue
+  type: enum
+  field: report_item_lv3_name_en
+- standard_word: Government Subsidies
+  synonyms:
+    - Gov Subsidies
+    - Government Grants
+    - Subsidies
+  type: enum
+  field: report_item_lv3_name_en
+- standard_word: Inventory Impairment Loss
+  synonyms:
+    - Inventory Loss
+    - Writedown
+  type: enum
+  field: report_item_lv3_name_en
+- standard_word: Investment Income
+  synonyms:
+    - Investment Returns
+    - Investment Gains
+  type: enum
+  field: report_item_lv3_name_en
+- standard_word: Marketing Expenses
+  synonyms:
+    - Marketing Costs
+    - Advertising Expenses
+    - Promo Expenses
+  type: enum
+  field: report_item_lv3_name_en
+- standard_word: Penalties and Fines
+  synonyms:
+    - Fines
+    - Penalties
+  type: enum
+  field: report_item_lv3_name_en
+- standard_word: Research and Development Expenses
+  synonyms:
+    - R&D
+    - R&D Expenses
+    - Development Costs
+  type: enum
+  field: report_item_lv3_name_en
+- standard_word: Sales Department Expenses
+  synonyms:
+    - Sales Dept Costs
+    - Sales Team Expenses
+  type: enum
+  field: report_item_lv3_name_en
+- standard_word: Service Cost
+  synonyms:
+    - Service Expense
+  type: enum
+  field: report_item_lv3_name_en
+- standard_word: Service Sales Revenue
+  synonyms:
+    - Service Sales
+    - Service Billings
+  type: enum
+  field: report_item_lv3_name_en
+- standard_word: Service Settlement Revenue
+  synonyms:
+    - Settlement Revenue
+    - Service Settlements
+  type: enum
+  field: report_item_lv3_name_en
+- standard_word: Supply Logistics Cost
+  synonyms:
+    - Logistics Cost
+    - Supply Chain Cost
+  type: enum
+  field: report_item_lv3_name_en
+- standard_word: Tariffs
+  synonyms:
+    - Customs Duties
+    - Import Duties
+  type: enum
+  field: report_item_lv3_name_en

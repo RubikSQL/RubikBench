@@ -1,0 +1,16 @@
+# Core dependencies
+agent-heaven
+duckdb
+pandas
+pyarrow
+
+# SQL dialect conversion and ORM
+sqlglot
+sqlalchemy
+
+# Huggingface dataset download
+huggingface_hub
+
+# Utilities
+tqdm
+click

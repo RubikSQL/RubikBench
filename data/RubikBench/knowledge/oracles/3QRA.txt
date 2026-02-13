@@ -1,0 +1,2 @@
+Three-quarter Rolling Average (3QRA) means computing quarterly trend and then center-averaging it over three quarters (unless explicitly stated as "trailing" 3QRA, which averages over the last three quarters).
+For example, to compute the 3QRA of revenue for Q3 2023, first find the quarterly revenues for Q2 2023 (202306 ytd - 202303 ytd), Q3 2023 (202309 ytd - 202306 ytd), and Q4 2023 (202312 ytd - 202309 ytd), then average them. Notice that for Q1 3QRA, you would use Q4 of the previous year, which need as far as 06 ytd data of the previous year.

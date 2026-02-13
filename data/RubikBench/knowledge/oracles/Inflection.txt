@@ -1,0 +1,3 @@
+Inflection points during trend analysis means the points where the trend changes direction, such as from increasing to decreasing or vice versa.
+Typically, e.g., when there's a monthly revenue column, if current month revenue is smaller than previous month revenue, it's a decreasing trend; if it's larger, it's an increasing trend. An inflection point is where this pattern changes: if last month was increasing and this month is decreasing, that's an inflection point.
+Use "inflection" column with "Y" or "N" to indicate whether an inflection point occurs in the current period compared to the previous period.
