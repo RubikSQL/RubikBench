@@ -1,12 +1,14 @@
 # Core dependencies
-agent-heaven
+agent-heaven>=0.9.4
 duckdb
 pandas
 pyarrow
 
-# SQL dialect conversion and ORM
+# Dataset download helpers
+gdown
+
+# SQL dialect conversion
 sqlglot
-sqlalchemy
 
 # Huggingface dataset download
 huggingface_hub
@@ -14,3 +16,4 @@ huggingface_hub
 # Utilities
 tqdm
 click
+typer

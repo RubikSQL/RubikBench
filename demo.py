@@ -1,8 +1,9 @@
 from ahvn.utils.db import Database
 from rubikbench import RubikBenchEvaluator, QuerySet
+from rubikbench.benchmarks import default_database_path, default_queries_path
 
-db = Database(provider="duckdb", database="./data/RubikBench/databases/RubikBench.duckdb")
-queries = QuerySet("./data/RubikBench/queries/RubikBench.json")
+db = Database(provider="duckdb", database=default_database_path("RubikBench"))
+queries = QuerySet(default_queries_path("RubikBench"))
 
 # Create a full template (empty SQL placeholders)
 # queries.create_template("submission_full.json")  # Uncomment to create full template
@@ -11,13 +12,14 @@ queries = QuerySet("./data/RubikBench/queries/RubikBench.json")
 sample_queries = queries.sample(n=10, seed=42)
 sample_queries.create_template("./submissions/sample.json", placeholder="SELECT 1+1;")
 
-# Evaluate submissions (default: ordered evaluation)
+# Evaluate submissions
 evaluator = RubikBenchEvaluator(
     db=db,
-    queries=QuerySet("./queries/RubikBench.json"),
+    queries=queries,
     bf_beta=2.0,
     sf_beta=1.0,
-    src="duckdb"    # Your SQL dialect, if not DuckDB, SQL will be converted automatically via SQLGlot to DuckDB
+    src="duckdb",   # Your SQL dialect, if not DuckDB, SQL will be converted automatically via SQLGlot to DuckDB
+    dedup=False,     # Match the CLI's strict default behavior
 )
 report = evaluator.evaluate_submission(submission="./submissions/sample.json")
 

@@ -22,7 +22,7 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://github.com/RubikSQL/RubikBench"
-Documentation = "https://github.com/RubikSQL/RubikBench#README.md"
+Documentation = "https://github.com/RubikSQL/RubikBench"
 Repository = "https://github.com/RubikSQL/RubikBench"
 "Bug Tracker" = "https://github.com/RubikSQL/RubikBench/issues"
 "HuggingFace Dataset" = "https://huggingface.co/datasets/Magolor/RubikBench"
@@ -40,9 +40,6 @@ dependencies = { file = ["requirements.txt"] }
 
 [tool.black]
 line-length = 160
-
-[tool.pytest.ini_options]
-pythonpath = ["src"]
 
 [project.scripts]
 rubikbench = "rubikbench.cli:cli"

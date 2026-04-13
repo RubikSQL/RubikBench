@@ -12,8 +12,6 @@ __pycache__/
 .idea/
 .vscode/
 *.code-workspace
-.pytest_cache/
-pytest_cache/
 .cache/
 env/
 venv/
@@ -40,6 +38,9 @@ scripts/
 
 # Conventional folders and files
 __assets__/
+__temp__/
+temp/
+tmp/
 _legacy/
 secret/
 temp.py

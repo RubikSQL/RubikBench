@@ -6,6 +6,8 @@ from typing import Any, Dict, Tuple
 from decimal import Decimal
 import re
 
+from ahvn.utils.db import strip_sql_comments
+
 
 def norm_val(v: Any, ndigits: int = 3) -> Any:
     """
@@ -44,11 +46,7 @@ def norm_row(row: Dict[str, Any], ndigits: int = 3) -> Tuple[Any, ...]:
 
 def strip_comments(sql: str) -> str:
     """Remove SQL comments from a query string."""
-    if not sql:
-        return ""
-    sql = re.sub(r"--.*?$", "", sql, flags=re.MULTILINE)
-    sql = re.sub(r"/\*.*?\*/", "", sql, flags=re.DOTALL)
-    return sql
+    return strip_sql_comments(sql)
 
 
 def has_order_by(sql: str) -> bool:

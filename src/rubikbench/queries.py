@@ -1,8 +1,8 @@
 """Query set management."""
 
-import json
-from pathlib import Path
-from typing import List, Dict, Any, Optional, Union, Set
+from typing import List, Dict, Any, Optional, Union
+
+from ahvn.utils.basic.serialize_utils import load_json, save_json
 
 
 class QuerySet:
@@ -24,8 +24,7 @@ class QuerySet:
     @staticmethod
     def _load_queries(path: str) -> List[Dict[str, Any]]:
         """Load queries from JSON file."""
-        with open(path, "r", encoding="utf-8") as f:
-            queries = json.load(f)
+        queries = load_json(path, strict=True)
         return queries
 
     def __len__(self) -> int:
@@ -195,8 +194,7 @@ class QuerySet:
 
     def to_json(self, path: str, indent: int = 4):
         """Save queries to JSON file."""
-        with open(path, "w", encoding="utf-8") as f:
-            json.dump(self._queries, f, ensure_ascii=False, indent=indent)
+        save_json(self._queries, path, indent=indent)
 
     def create_template(self, output_path: str, placeholder: str = "") -> None:
         """
@@ -209,11 +207,10 @@ class QuerySet:
             placeholder: Placeholder value for empty SQL fields (default: "").
 
         Example:
-            >>> qs = QuerySet("./queries/RubikBench.json")
+            >>> qs = QuerySet("./data/RubikBench/queries/RubikBench.json")
             >>> qs.create_template("submission.json")
             >>> # Create with a default SQL placeholder
             >>> qs.create_template("submission.json", placeholder="SELECT 1+1;")
         """
         template_data = {q["id"]: placeholder for q in self._queries}
-        with open(output_path, "w", encoding="utf-8") as f:
-            json.dump(template_data, f, indent=4, ensure_ascii=False)
+        save_json(template_data, output_path, indent=4)

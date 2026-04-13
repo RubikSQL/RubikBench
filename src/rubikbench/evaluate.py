@@ -1,19 +1,39 @@
 """Evaluation pipeline for RubikBench."""
 
-import json
 import time
 from typing import Dict, Any, List, Optional, Union
 from dataclasses import dataclass, field, asdict
 from datetime import datetime
 
-from ahvn.utils.db import Database
+from ahvn.utils.db import Database, escape_sql_binds
+from ahvn.utils.basic.serialize_utils import load_json, save_json
 
 from .queries import QuerySet
-from .dialect import convert_sql, normalize_dialect, safe_sql
+from .dialect import convert_sql, normalize_dialect
 from .metrics import ex_match, bfbeta_score, soft_fbeta_score, has_order_by
 
 _MAX_ROWS = 1000
 _DEFAULT_TIMEOUT = 300
+
+
+def normalize_submission_data(submission_data: Any) -> Dict[str, str]:
+    """Validate and normalize a submission mapping."""
+    if not isinstance(submission_data, dict):
+        raise TypeError("Submission must be a JSON object mapping query IDs to SQL strings.")
+
+    normalized: Dict[str, str] = dict()
+    for query_id, sql in submission_data.items():
+        if not isinstance(query_id, str) or not query_id.strip():
+            raise TypeError("Submission keys must be non-empty query ID strings.")
+        if sql is None:
+            normalized[query_id] = ""
+            continue
+        if not isinstance(sql, str):
+            raise TypeError(
+                f"Submission value for {query_id!r} must be a SQL string or null, got {type(sql).__name__}."
+            )
+        normalized[query_id] = sql
+    return normalized
 
 
 def is_ordered(query: Dict[str, Any], unordered: bool = False) -> bool:
@@ -91,8 +111,7 @@ class EvaluationReport:
         return d
 
     def to_json(self, path: str, indent: int = 4):
-        with open(path, "w", encoding="utf-8") as f:
-            json.dump(self.to_dict(), f, ensure_ascii=False, indent=indent)
+        save_json(self.to_dict(), path, indent=indent)
 
 
 class RubikBenchEvaluator:
@@ -109,7 +128,7 @@ class RubikBenchEvaluator:
         unordered: bool = False,
         timeout: Optional[float] = _DEFAULT_TIMEOUT,
         db_resolver: Optional[Any] = None,
-        dedup: bool = True,
+        dedup: bool = False,
     ):
         self.db = db
         self.queries = queries
@@ -134,7 +153,7 @@ class RubikBenchEvaluator:
         _db = db or self.db
         start = time.time()
         try:
-            sql = safe_sql(sql)
+            sql = escape_sql_binds(sql)
             result = _db.execute(sql, safe=True)
             elapsed = (time.time() - start) * 1000
             if hasattr(result, "error_type") and result.error_type:
@@ -265,10 +284,10 @@ class RubikBenchEvaluator:
         progress: bool = True,
     ) -> EvaluationReport:
         if isinstance(submission, str):
-            with open(submission, "r", encoding="utf-8") as f:
-                submission_data = json.load(f)
+            submission_data = load_json(submission, strict=True)
         else:
             submission_data = submission
+        submission_data = normalize_submission_data(submission_data)
 
         filtered_queries = self.queries
         if query_ids is not None:
@@ -313,6 +332,7 @@ class RubikBenchEvaluator:
                         ordered=is_ordered(query, self.unordered),
                         pred_error=f"Unexpected error: {e}",
                     )
+            results.append(result)
         report = self.aggregate(results)
         report.config = {
             "bf_beta": self.bf_beta,

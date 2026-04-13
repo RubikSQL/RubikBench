@@ -1,11 +1,8 @@
 """SQL dialect conversion via sqlglot."""
 
-from ahvn.utils.db import prettify_sql
 import sqlglot
 
-
-def safe_sql(sql: str) -> str:
-    return sql.replace(":", r"\:").strip()
+from ahvn.utils.db import validate_sql as _ahvn_validate_sql
 
 
 # Mapping of common dialect names to sqlglot dialect names
@@ -101,14 +98,7 @@ def validate_sql(sql: str, dialect: str = "duckdb") -> bool:
     Returns:
         True if SQL is valid, False otherwise.
     """
-    if not sql or not sql.strip():
-        return False
-    dialect = normalize_dialect(dialect)
-    try:
-        result = sqlglot.parse(sql, dialect=dialect)
-        return len(result) > 0 and result[0] is not None
-    except Exception:
-        return False
+    return _ahvn_validate_sql(sql, dialect=normalize_dialect(dialect))
 
 
 def get_supported_dialects() -> list:
