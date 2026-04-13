@@ -1000,7 +1000,7 @@ To add support for a new benchmark:
 
 - [2026-04] **RubikBench v0.9.3**:
     - Added MD5 checksum verification for all downloaded benchmark data.
-    - Migrated internal utilities to [AgentHeaven](https://github.com/Magolor/AgentHeaven).
+    - Migrated internal utilities to [AgentHeaven](https://pypi.org/project/agent-heaven/).
 
 - [2025-02] **RubikBench v0.9.2**:
     - Added 3198 queries and query statistics (schema-grounded queries to be added).
